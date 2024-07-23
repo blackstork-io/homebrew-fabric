@@ -5,21 +5,21 @@
 class Fabric < Formula
   desc "An open-source command-line tool for cybersecurity reporting automation and a configuration language for reusable templates"
   homepage "https://blackstork.io/fabric/"
-  version "0.4.2-rc3"
+  version "0.4.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2-rc3/fabric_darwin_x86_64.tar.gz"
-      sha256 "b8ff680c14786ff41fa7441ebaf5d18c29b825de0bf742f3acaf116e20d5e679"
+      url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2/fabric_darwin_x86_64.tar.gz"
+      sha256 "4931a3fa65ef2d958c02cc82b60b5cf403d7997229623bf0497e6d93905f9b35"
 
       def install
         bin.install "fabric"
       end
     end
     on_arm do
-      url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2-rc3/fabric_darwin_arm64.tar.gz"
-      sha256 "f230fe380d7724ca09d814581e5e62ea268d8b3e031fa6a98cd282c06267c789"
+      url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2/fabric_darwin_arm64.tar.gz"
+      sha256 "52a0aa1d7634f8b3868069159d2ce96c4de114fd5a9d74e9855577008ff34125"
 
       def install
         bin.install "fabric"
@@ -30,8 +30,8 @@ class Fabric < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2-rc3/fabric_linux_x86_64.tar.gz"
-        sha256 "953c02843ac567beac668ab1aa8ac99f1120b3fc6ddf433e1d94a4d510f0bac8"
+        url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2/fabric_linux_x86_64.tar.gz"
+        sha256 "2e8a613b5031d815e755c54d1edb3bd6de595434619c617d9673c5fa9daa06e0"
 
         def install
           bin.install "fabric"
@@ -40,8 +40,8 @@ class Fabric < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2-rc3/fabric_linux_arm64.tar.gz"
-        sha256 "68396c3372601f5037ce71d87a0b1fc46925f15aa99952e9a07f4b4acd9cfc91"
+        url "https://github.com/blackstork-io/fabric/releases/download/v0.4.2/fabric_linux_arm64.tar.gz"
+        sha256 "326ab77926074862121f5a2256ebb03c1bfe18cadec50ae7ab996b09b2c40acc"
 
         def install
           bin.install "fabric"
